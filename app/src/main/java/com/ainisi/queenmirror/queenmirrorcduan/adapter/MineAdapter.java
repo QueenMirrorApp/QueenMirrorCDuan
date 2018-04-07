@@ -9,7 +9,9 @@ import com.ainisi.queenmirror.queenmirrorcduan.utils.BaseViewHolder;
 import java.util.List;
 
 /**
- * Created by Administrator on 2018/3/29.
+ * Created by Administrator on 2018/3/
+ *
+ * jl
  */
 
 public class MineAdapter extends BaseRecyclerAdapter<SortBean> {
