@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="comment_23_dip">23dp</dimen>
+    <dimen name="comment_150_dip">150dp</dimen>
+    <dimen name="comment_18_dip">18dp</dimen>
+    <dimen name="comment_16_dip">16dp</dimen>
+    <dimen name="comment_300_dip">300dp</dimen>
+    <dimen name="comment_0_dip">0dp</dimen>
+    <dimen name="comment_28_dip">28dp</dimen>
+    <dimen name="comment_14_dip">14dp</dimen>
+    <dimen name="comment_12_dip">12dp</dimen>
+    <dimen name="comment_13_dip">13dp</dimen>
+    <dimen name="comment_11_dip">11dp</dimen>
+    <dimen name="comment_41_dip">41dp</dimen>
+    <dimen name="comment_22_dip">22dp</dimen>
+    <dimen name="comment_19_dip">19dp</dimen>
+    <dimen name="comment_29_dip">29dp</dimen>
+    <dimen name="comment_84_dip">84dp</dimen>
+    <dimen name="comment_108_dip">108dp</dimen>
+    <dimen name="comment_107_dip">107dp</dimen>
+    <dimen name="comment_44_dip">44dp</dimen>
+    <dimen name="comment_375_dip">375dp</dimen>
+    <dimen name="comment_7_dip">7dp</dimen>
+    <dimen name="comment_21_dip">21dp</dimen>
+    <dimen name="comment_112_dip">112dp</dimen>
+    <dimen name="comment_17_dip">17dp</dimen>
+    <dimen name="comment_39_dip">39dp</dimen>
+    <dimen name="comment_270_dip">270dp</dimen>
+    <dimen name="comment_67_dip">67dp</dimen>
+    <dimen name="comment_330_dip">330dp</dimen>
+    <dimen name="comment_202_dip">202dp</dimen>
+    <dimen name="comment_74_dip">74dp</dimen>
+    <dimen name="comment_114_dip">114dp</dimen>
+    <dimen name="comment_83_dip">83dp</dimen>
+    <dimen name="comment_38_dip">38dp</dimen>
+    <dimen name="comment_47_dip">47dp</dimen>
+    <dimen name="comment_57_dip">57dp</dimen>
+    <dimen name="comment_32_dip">32dp</dimen>
+    <dimen name="comment_31_dip">31dp</dimen>
+    <dimen name="comment_180_dip">180dp</dimen>
+    <dimen name="comment_26_dip">26dp</dimen>
+    <dimen name="comment_35_size">35sp</dimen>
+    <dimen name="comment_25_size">25dp</dimen>
+
+</resources>

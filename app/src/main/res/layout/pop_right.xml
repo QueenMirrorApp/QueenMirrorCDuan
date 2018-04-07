@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/alpha_05_white"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/comment_70_dip"
+        android:layout_marginBottom="@dimen/comment_40_dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:id="@+id/tv_head"
+            android:layout_marginLeft="@dimen/comment_5_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/comment_11_dip"
+            android:text="@string/business_features" />
+        <LinearLayout
+            android:layout_below="@id/tv_head"
+            android:id="@+id/layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bt_shop"
+            android:textSize="@dimen/comment_10_dip"
+            android:layout_weight="1"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_margin="@dimen/comment_5_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:background="@color/alpha_05_black"
+            android:layout_below="@+id/tv_head"
+            android:gravity="center"
+            android:text="@string/new_business" />
+
+        <TextView
+            android:id="@+id/bt_shop2"
+            android:layout_weight="1"
+            android:textSize="@dimen/comment_10_dip"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_margin="@dimen/comment_5_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:background="@color/alpha_05_black"
+            android:gravity="center"
+            android:text="@string/brand_business" />
+
+        <TextView
+            android:id="@+id/bt_shop3"
+            android:textSize="@dimen/comment_10_dip"
+            android:layout_weight="1"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_margin="@dimen/comment_5_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:background="@color/alpha_05_black"
+            android:gravity="center"
+            android:text="@string/consumer_security" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/bt_shop4"
+
+            android:layout_weight="1"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_margin="@dimen/comment_5_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:textSize="@dimen/comment_10_dip"
+            android:background="@color/alpha_05_black"
+            android:gravity="center"
+            android:text="@string/return_goods" />
+
+        <TextView
+            android:id="@+id/bt_shop5"
+            android:layout_weight="1"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_margin="@dimen/comment_5_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:textSize="@dimen/comment_10_dip"
+            android:background="@color/alpha_05_black"
+            android:gravity="center"
+            android:text="@string/support_Invoicing" />
+
+        <TextView
+            android:id="@+id/bt_shop6"
+            android:layout_weight="1"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_margin="@dimen/comment_5_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:textSize="@dimen/comment_10_dip"
+            android:background="@color/alpha_05_black"
+            android:gravity="center"
+            android:text="@string/beans_to_money" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/bv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_head"
+            android:layout_below="@+id/layout2"
+            android:layout_marginTop="@dimen/comment_14_dip"
+            android:text="@string/price_range" />
+
+        <LinearLayout
+            android:id="@+id/bt_shop7"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_35_dip"
+            android:layout_below="@+id/bv_price"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:background="@color/alpha_05_black"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/et_low"
+                android:maxLength="3"
+                android:inputType="number"
+                android:layout_width="@dimen/comment_160_dip"
+                android:layout_height="@dimen/comment_30_dip"
+                android:layout_below="@+id/view2"
+                android:layout_toStartOf="@+id/et_hight"
+                android:background="@color/white"
+                android:textSize="@dimen/comment_14_dip"
+                android:gravity="center"
+                android:hint="@string/minimum_price" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/comment_5_dip"
+                android:layout_height="@dimen/comment_1_dip"
+                android:layout_marginLeft="@dimen/comment_5_dip"
+                android:layout_marginRight="@dimen/comment_5_dip"
+                android:background="@color/alpha_95_black" />
+
+            <EditText
+                android:id="@+id/et_hight"
+                android:layout_width="@dimen/comment_160_dip"
+                android:layout_height="@dimen/comment_30_dip"
+                android:textSize="@dimen/comment_14_size"
+                android:maxLength="3"
+                android:inputType="number"
+                android:layout_below="@+id/view2"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="@string/highest_price" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_flexible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bv_price"
+            android:layout_below="@+id/bt_shop7"
+            android:layout_marginTop="@dimen/comment_22_dip"
+            android:text="@string/preferential_activities" />
+
+        <ImageView
+            android:id="@+id/iv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bt_shop7"
+            android:layout_below="@+id/tv_flexible"
+            android:layout_marginTop="@dimen/comment_13_dip"
+            app:srcCompat="@drawable/icon_pop_discount" />
+
+        <TextView
+            android:layout_below="@+id/tv_flexible"
+            android:id="@+id/tv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_toRightOf="@id/iv_discount"
+            android:text="@string/preferential_merchants"
+            android:textSize="@dimen/comment_12_size"
+            android:layout_marginTop="@dimen/comment_15_dip"/>
+
+        <ImageView
+            android:layout_below="@id/iv_discount"
+            android:id="@+id/iv_rebate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bt_shop7"
+
+            android:layout_marginTop="@dimen/comment_10_dip"
+            app:srcCompat="@drawable/icon_pop_fracture" />
+
+        <TextView
+            android:layout_below="@id/iv_discount"
+            android:id="@+id/tv_rebate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_toRightOf="@id/iv_rebate"
+            android:text="@string/discounted_goods"
+            android:textSize="@dimen/comment_12_size"
+            android:layout_marginTop="@dimen/comment_12_dip"/>
+
+        <ImageView
+            android:layout_below="@id/iv_rebate"
+            android:id="@+id/iv_fullcut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bt_shop7"
+
+            android:layout_marginTop="@dimen/comment_10_dip"
+            app:srcCompat="@drawable/icon_pop_reduce" />
+
+        <TextView
+            android:layout_below="@id/iv_rebate"
+            android:id="@+id/tv_fullcut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_toRightOf="@id/iv_fullcut"
+            android:text="@string/full_reduction"
+            android:textSize="@dimen/comment_12_size"
+            android:layout_marginTop="@dimen/comment_12_dip"/>
+
+        <ImageView
+            android:id="@+id/iv_intoshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_discount"
+            android:layout_marginStart="@dimen/comment_70_dip"
+            android:layout_toEndOf="@+id/tv_head"
+            app:srcCompat="@drawable/icon_pop_collar" />
+
+        <TextView
+            android:id="@+id/tv_intoshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_discount"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_toEndOf="@+id/iv_intoshop"
+            android:text="@string/collar_coupons"
+            android:textSize="@dimen/comment_12_size" />
+        <ImageView
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:layout_below="@id/iv_intoshop"
+            android:id="@+id/iv_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_70_dip"
+            android:layout_toEndOf="@+id/tv_head"
+            app:srcCompat="@drawable/icon_pop_give" />
+
+        <TextView
+            android:layout_below="@id/iv_intoshop"
+            android:id="@+id/tv_full"
+            android:layout_marginTop="@dimen/comment_12_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_5_dip"
+            android:layout_toEndOf="@+id/iv_full"
+            android:text="@string/full_gift"
+            android:textSize="@dimen/comment_12_size" />
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_eliminate"
+            android:text="@string/scavenging_screening"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="@dimen/comment_0_dip"
+            android:gravity="center"
+            android:layout_height="@dimen/comment_40_dip" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:text="@string/complete"
+            android:background="@drawable/ic_setting_breake"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="@dimen/comment_40_dip" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

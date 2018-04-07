@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/comment_3_dip"
+        android:layout_marginRight="@dimen/comment_3_dip"
+        android:background="#FFF"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/Recommend_layout"
+            android:layout_height="@dimen/comment_40_dip">
+
+            <TextView
+                android:id="@+id/rb_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort"
+                android:textSize="@dimen/comment_12_size" />
+            <ImageView
+                android:id="@+id/iv_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/arrow_dwon_blue" />
+
+            <ImageView
+                android:id="@+id/iv_sort1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/arrow_up_black"
+                android:visibility="gone" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/rb_sales"
+            style="@style/Recommend_layout"
+            android:layout_height="@dimen/comment_40_dip"
+            android:textSize="@dimen/comment_12_size"
+            android:text="@string/sales" />
+
+        <TextView
+
+            android:id="@+id/rb_distance"
+            style="@style/Recommend_layout"
+            android:layout_height="@dimen/comment_40_dip"
+            android:textSize="@dimen/comment_12_size"
+            android:text="@string/distance" />
+
+        <LinearLayout
+            style="@style/Recommend_layout"
+            android:layout_height="@dimen/comment_40_dip"
+
+            >
+
+            <TextView
+                android:id="@+id/rb_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/comment_12_size"
+                android:text="@string/screen" />
+
+            <RadioButton
+
+                android:id="@+id/bt_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comment_1_dip"
+                android:button="@null"
+                android:drawableLeft="@drawable/icon_home_screen" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

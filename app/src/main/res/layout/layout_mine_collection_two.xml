@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ly_mine_discount"
+        android:layout_width="@dimen/comment_0_dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/comment_32_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/icon_mine_discount" />
+
+        <TextView
+            android:textSize="@dimen/comment_14_size"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Coupon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notused"
+            android:textSize="@dimen/comment_12_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_mine_invincible"
+        android:layout_width="@dimen/comment_0_dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/comment_32_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/icon_mine_invincible" />
+
+        <TextView
+            android:textSize="@dimen/comment_14_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invincible_coupon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notused"
+            android:textSize="@dimen/comment_12_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_mine_foot"
+        android:layout_width="@dimen/comment_0_dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="@dimen/comment_32_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/icon_mine_queen" />
+
+        <TextView
+            android:textSize="@dimen/comment_14_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/queen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/member_management"
+            android:textSize="@dimen/comment_12_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_mine_wallet"
+        android:layout_width="@dimen/comment_0_dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/comment_32_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/icon_mine_wallet" />
+
+        <TextView
+            android:textSize="@dimen/comment_14_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mywallet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_management"
+            android:textSize="@dimen/comment_12_size" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ly_mine_bean"
+        android:layout_below="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/comment_20_dip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/comment_32_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/icon_mine_magic" />
+
+        <TextView
+            android:textSize="@dimen/comment_14_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_magic_beans" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000个"
+            android:textSize="@dimen/comment_12_size" />
+
+    </LinearLayout>
+</RelativeLayout>

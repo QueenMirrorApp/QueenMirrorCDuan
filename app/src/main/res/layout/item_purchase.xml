@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_title"
+        android:layout_width="@dimen/comment_70_dip"
+        android:layout_height="@dimen/comment_70_dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        app:srcCompat="@drawable/icon_home_beautiful" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_title"
+        android:layout_marginStart="@dimen/comment_12_dip"
+        android:layout_marginTop="@dimen/comment_23_dip"
+        android:layout_toEndOf="@+id/img_title"
+        android:text="深沉清洁加补水" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_name"
+        android:layout_marginStart="@dimen/comment_20_dip"
+        android:layout_toEndOf="@+id/tv_name"
+        android:text="X1" />
+
+    <TextView
+        android:id="@+id/tv_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_num"
+        android:layout_marginStart="@dimen/comment_30_dip"
+        android:layout_toEndOf="@+id/tv_num"
+        android:text="¥58" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv_prix"
+        android:layout_marginEnd="@dimen/comment_20_dip"
+        android:text="¥38"
+        android:textColor="@android:color/holo_red_light" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/comment_5_dip"
+            style="@style/dash_line"/>
+</LinearLayout>

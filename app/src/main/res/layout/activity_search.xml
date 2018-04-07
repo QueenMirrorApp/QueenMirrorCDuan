@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_newtitle" />
+
+
+    <TextView
+        android:id="@+id/tv_hot_search_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:layout_marginLeft="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:text="@string/hot_search" />
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/rc_hot"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:layout_marginLeft="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:text="@string/historical_Search" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/comment_10_dip"
+                android:paddingRight="@dimen/comment_10_dip">
+
+                <TextView
+                    android:id="@+id/tv_no_history_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/no_historical_Search"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/search_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_clear_history_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_10_dip"
+                android:layout_marginRight="@dimen/comment_10_dip"
+                android:text="清空搜索" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

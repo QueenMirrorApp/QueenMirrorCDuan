@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.MessageActivity">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:id="@+id/layout_order"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_title"
+        android:layout_alignParentStart="true">
+    <ImageView
+        android:id="@+id/iv_order"
+        android:layout_width="@dimen/comment_60_dip"
+        android:layout_height="@dimen/comment_75_dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/comment_18_dip"
+        android:layout_marginTop="@dimen/comment_15_dip"
+        app:srcCompat="@drawable/icon_home_submit" />
+
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_order"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:textSize="@dimen/comment_14_size"
+        android:textColor="@color/alpha_90_black"
+        android:layout_toEndOf="@+id/iv_order"
+        android:text="订单消息" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order"
+        android:layout_marginTop="@dimen/comment_20_dip"
+        android:textSize="@dimen/comment_14_size"
+        android:layout_alignEnd="@+id/tv_order"
+        android:text="暂无消息" />
+   </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/layout_order"
+        android:layout_width="match_parent"
+        android:background="@color/alpha_05_black"
+        android:layout_height="@dimen/comment_1_dip"
+        />
+    <RelativeLayout
+        android:layout_below="@+id/view"
+        android:id="@+id/layout_system"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_system"
+            android:layout_width="@dimen/comment_60_dip"
+            android:layout_height="@dimen/comment_75_dip"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/comment_18_dip"
+            android:layout_marginTop="@dimen/comment_15_dip"
+            app:srcCompat="@drawable/icon_home_xitong" />
+
+        <TextView
+            android:id="@+id/tv_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_system"
+            android:layout_marginStart="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:textSize="@dimen/comment_14_size"
+            android:textColor="@color/alpha_90_black"
+            android:layout_toEndOf="@+id/iv_system"
+            android:text="系统消息" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_system"
+            android:layout_marginTop="@dimen/comment_20_dip"
+            android:textSize="@dimen/comment_14_size"
+            android:layout_alignEnd="@+id/tv_system"
+            android:text="暂无消息" />
+    </RelativeLayout>
+
+</RelativeLayout>

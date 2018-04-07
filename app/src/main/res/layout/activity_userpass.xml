@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alpha_05_black"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.UserpassActivity">
+    <include
+        android:id="@+id/pass"
+        layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:background="@color/white"
+        android:layout_below="@id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pass"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        app:srcCompat="@drawable/icon_full_shop" />
+    <EditText
+        android:inputType="number"
+        android:maxLength="11"
+        android:layout_marginStart="@dimen/comment_5_dip"
+        android:layout_below="@id/pass"
+        android:background="@color/white"
+        android:hint="@string/add_phone_number"
+        android:gravity="center|left"
+        android:textSize="@dimen/comment_14_size"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/iv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <View
+        android:id="@+id/v1_pass"
+        android:layout_below="@id/iv_phone"
+        android:background="@color/alpha_20_black"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <ImageView
+        android:id="@+id/iv_verification"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v1_pass"
+        android:layout_marginStart="14dp"
+        app:srcCompat="@drawable/icon_full_shop" />
+    <EditText
+        android:id="@+id/ev_verification"
+        android:layout_below="@+id/v1_pass"
+        android:background="@color/white"
+        android:hint="@string/add_verification"
+        android:inputType="number"
+        android:layout_marginStart="@dimen/comment_5_dip"
+        android:textSize="@dimen/comment_14_size"
+        android:layout_toEndOf="@id/iv_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <View
+        android:id="@+id/v2_pass"
+        android:layout_below="@id/iv_verification"
+        android:background="@color/alpha_20_black"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <ImageView
+        android:id="@+id/iv_pass"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v2_pass"
+        android:layout_marginStart="14dp"
+        app:srcCompat="@drawable/icon_full_shop" />
+    <EditText
+        android:layout_below="@+id/v2_pass"
+        android:background="@color/white"
+        android:hint="@string/add_password"
+        android:inputType="numberPassword|number"
+
+        android:layout_marginStart="@dimen/comment_5_dip"
+        android:textSize="@dimen/comment_14_size"
+        android:layout_toEndOf="@id/iv_pass"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/verification"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_setting_breake"
+        android:gravity="center"
+        android:layout_margin="@dimen/comment_5_dip"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/v2_pass"
+        android:layout_alignEnd="@+id/v1_pass"
+        android:text="@string/get_message_information"
+        android:textSize="@dimen/comment_14_size"
+        android:layout_alignTop="@+id/v1_pass" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/comment_20_dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_setting_breake"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/iv_pass"
+        android:text="@string/determine" />
+
+</RelativeLayout>

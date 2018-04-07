@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EC5990</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_product_detail_code_text">#E39999</color>
+    <color name="drop_down_selected">#5E3778</color>
+    <color name="normal">#fff</color>
+    <color name="press">#ff0</color>
+    <color name="focue">#666</color>
+
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+    <!-- app主色调-->
+    <color name="white">#ffffff</color>
+    <color name="bg_gray">#9b9d9a</color>
+    <color name="gray_E7370C">#D55B74</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_d0d0d0">#d0d0d0</color>
+    <color name="tranparent">#00000000</color>
+    <color name="color_pop_bg">#E9EFF2</color>
+    <color name="right_time_color">#f8f8f8</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="appbar_blue">#2BB0AF</color>
+    <color name="zidiyi">@drawable/ic_setting_breake</color>
+
+
+    <color name="alpha_05_white">#0DFFFFFF</color>
+    <color name="alpha_10_white">#1AFFFFFF</color>
+    <color name="alpha_15_white">#26FFFFFF</color>
+    <color name="alpha_20_white">#33FFFFFF</color>
+    <color name="alpha_25_white">#40FFFFFF</color>
+    <color name="alpha_30_white">#4DFFFFFF</color>
+    <color name="alpha_35_white">#59FFFFFF</color>
+    <color name="alpha_40_white">#66FFFFFF</color>
+    <color name="alpha_45_white">#73FFFFFF</color>
+    <color name="alpha_50_white">#80FFFFFF</color>
+    <color name="alpha_55_white">#8CFFFFFF</color>
+    <color name="alpha_60_white">#99FFFFFF</color>
+    <color name="alpha_65_white">#A6FFFFFF</color>
+    <color name="alpha_70_white">#b3ffffff</color>
+    <color name="alpha_75_white">#BFFFFFFF</color>
+    <color name="alpha_80_white">#CCFFFFFF</color>
+    <color name="alpha_85_white">#D9FFFFFF</color>
+    <color name="alpha_90_white">#E6FFFFFF</color>
+    <color name="alpha_95_white">#F2FFFFFF</color>
+
+    <color name="alpha_05_black">#0D000000</color>
+    <color name="alpha_10_black">#1a970aaa</color>
+    <color name="alpha_15_black">#26000000</color>
+    <color name="alpha_20_black">#33000000</color>
+    <color name="alpha_25_black">#40000000</color>
+    <color name="alpha_30_black">#4D000000</color>
+    <color name="alpha_35_black">#59000000</color>
+    <color name="alpha_40_black">#66000000</color>
+    <color name="alpha_45_black">#73000000</color>
+    <color name="alpha_50_black">#80000000</color>
+    <color name="alpha_55_black">#8C000000</color>
+    <color name="alpha_60_black">#99000000</color>
+    <color name="alpha_65_black">#A6000000</color>
+    <color name="alpha_70_black">#B3000000</color>
+    <color name="alpha_75_black">#BF000000</color>
+    <color name="alpha_80_black">#CC000000</color>
+    <color name="alpha_85_black">#D9000000</color>
+    <color name="alpha_90_black">#E6000000</color>
+    <color name="alpha_95_black">#F2000000</color>
+
+
+
+    <!-- toast-->
+    <color name="toast_white">#ffffff</color>
+    <color name="toast_stroke_gray">#99d4d4d4</color>
+    <color name="alpha_violet">#FFB307C2</color>
+    <color name="alpha_violet01">#FF84078F</color>
+    <color name="alpha_violet00">#D288C4</color>
+    <color name="yellow">#FFF1C606</color>
+    <color name="colorDeeppowder">#FFEF30E5</color>
+    <color name="Deepblue">#FF93C6B8</color>
+    <color name="Dark_green">#2C5D2C</color>
+    <color name="light_yellow">#F7E6B9</color>
+    <color name="colorPri">#FFFF0202</color>
+    <color name="deep_powder">#FF5500</color>
+
+</resources>

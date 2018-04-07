@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alpha_05_black"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.MineQueenActivity">
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_queentitle"/>
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/ic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_portrait"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/comment_2_dip"
+            android:layout_marginLeft="@dimen/comment_20_dip"
+            android:layout_marginRight="@dimen/comment_20_dip"
+            android:layout_alignBottom="@+id/tv_phone"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/comment_21_dip" />
+        <View
+            android:layout_toRightOf="@id/iv_title"
+            android:layout_width="@dimen/comment_1_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:background="@color/alpha_05_black"
+            android:layout_height="@dimen/comment_110_dip"/>
+
+
+    <ImageView
+        android:id="@+id/iv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/comment_112_dip"
+        android:layout_marginTop="@dimen/comment_11_dip"
+        app:srcCompat="@drawable/icon_queen_me" />
+
+    <ImageView
+        android:id="@+id/iv_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_name"
+        android:layout_below="@+id/iv_name"
+        android:layout_marginTop="@dimen/comment_11_dip"
+        app:srcCompat="@drawable/icon_queen_wallet" />
+
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_wallet"
+        android:layout_below="@+id/iv_wallet"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        app:srcCompat="@drawable/icon_queen_phone" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_phone"
+        android:layout_below="@+id/iv_phone"
+        android:layout_marginTop="@dimen/comment_13_dip"
+        app:srcCompat="@drawable/icon_queen_back" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_wallet"
+        android:layout_marginStart="@dimen/comment_10_dip"
+        android:layout_toRightOf="@+id/iv_name"
+        android:text="王菲"
+        android:textColor="?android:attr/colorForeground" />
+
+    <TextView
+        android:id="@+id/tv_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_phone"
+        android:layout_alignStart="@+id/tv_name"
+        android:text="8008"
+        android:textColor="@color/drop_down_unselected" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_wallet"
+        android:layout_alignTop="@+id/iv_phone"
+        android:layout_marginTop="@dimen/comment_3_dip"
+        android:text="17677491072"
+        android:textColor="@color/drop_down_unselected" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_back"
+        android:layout_alignStart="@+id/tv_phone"
+        android:text="¥0.00"
+        android:textColor="@color/drop_down_unselected" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:layout_below="@id/iv_back"
+            android:background="@color/alpha_05_black"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:layout_height="@dimen/comment_1_dip"/>
+        <Button
+            android:id="@+id/bt_see"
+            android:layout_width="@dimen/comment_120_dip"
+            android:layout_height="@dimen/comment_35_dip"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/view"
+            android:layout_marginStart="@dimen/comment_70_dip"
+            android:textSize="@dimen/comment_12_size"
+            android:background="@color/alpha_55_black"
+            android:text="@string/view_the_order_record" />
+
+        <Button
+            android:id="@+id/bt_recharge"
+            android:layout_width="@dimen/comment_80_dip"
+            android:background="@drawable/ic_setting_breake"
+            android:layout_height="@dimen/comment_35_dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/bt_see"
+            android:layout_marginEnd="@dimen/comment_70_dip"
+            android:textSize="@dimen/comment_12_size"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:text="@string/want_to_recharge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/comment_17_dip"
+            android:text="@string/card_payment"
+            android:textColor="@color/drop_down_unselected"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_expenditure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_card"
+            android:textSize="@dimen/comment_12_size"
+            android:layout_centerHorizontal="true"
+            android:text="@string/face_to_face_payment" />
+
+        <ImageView
+            android:id="@+id/iv_barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_expenditure"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/icon_queen_barcode" />
+
+        <ImageView
+            android:id="@+id/iv_quercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_barcode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            app:srcCompat="@drawable/icon_queen_qrcode" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

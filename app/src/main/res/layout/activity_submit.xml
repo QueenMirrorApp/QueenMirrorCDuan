@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alpha_05_black"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.SubmitActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/alpha_15_black"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_25_dip"
+            android:paddingRight="@dimen/comment_10_dip"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/newtitle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/title_back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:layout_marginLeft="@dimen/comment_40_dip"
+            android:layout_marginRight="@dimen/comment_40_dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="@dimen/comment_5_dip"
+            android:text="@string/payment_order"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_18_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newtitle_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/comment_14_size"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:text="@string/remaining_time" />
+
+        <TextView
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:id="@+id/textView13"
+            android:background="@color/alpha_95_black"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/comment_20_dip"
+            android:layout_height="@dimen/comment_20_dip"
+            android:layout_alignEnd="@+id/newtitle_title"
+            android:layout_below="@+id/textView10"
+            android:layout_marginEnd="@dimen/comment_67_dip"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="@dimen/comment_20_dip"
+            android:layout_height="@dimen/comment_20_dip"
+            android:textColor="@color/white"
+            android:background="@color/alpha_95_black"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_marginLeft="@dimen/comment_13_dip"
+            android:layout_alignStart="@+id/newtitle_title"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_6_dip"
+            android:layout_marginBottom="@dimen/comment_2_dip"
+            android:textColor="@color/alpha_90_black"
+            android:layout_alignBottom="@+id/textView18"
+            android:layout_toEndOf="@+id/textView18"
+            android:text=":" />
+
+
+        <TextView
+            android:id="@+id/textView131"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:background="@color/alpha_95_black"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/comment_20_dip"
+            android:layout_height="@dimen/comment_20_dip"
+            android:layout_alignEnd="@+id/newtitle_title"
+            android:layout_below="@+id/textView10"
+            android:layout_marginEnd="8dp"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/textView181"
+            android:layout_width="@dimen/comment_20_dip"
+            android:layout_height="@dimen/comment_20_dip"
+            android:textColor="@color/white"
+            android:background="@color/alpha_95_black"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_marginLeft="23dp"
+            android:layout_alignStart="@id/textView131"
+
+            android:text="4" />
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/comment_20_dip"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:background="@color/alpha_40_black"
+        android:layout_height="@dimen/comment_2_dip"/>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/comment_25_dip"
+        android:layout_height="match_parent"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_title"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:src="@drawable/icon_portrait"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="@dimen/comment_2_dip" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/comment_5_dip"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/comment_16_size"
+            android:layout_toRightOf="@+id/iv_title"
+            android:text="¥222"
+            android:textColor="@color/alpha_90_black"
+            />
+
+        <TextView
+            android:id="@+id/tv_shop"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/comment_3_dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_5_dip"
+            android:layout_below="@id/tv_name"
+            android:layout_toRightOf="@+id/iv_title"
+            android:textSize="@dimen/comment_14_size"
+            android:text="Dear Kin形象工作室"
+             />
+    </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/comment_20_dip"
+        android:layout_marginTop="@dimen/comment_20_dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/recycler_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_40_dip">
+
+        <ImageView
+            android:id="@+id/img_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_13_dip"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/icon_submit_wechat" />
+
+        <TextView
+            android:id="@+id/tv_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_13_dip"
+            android:layout_toRightOf="@id/img_wechat"
+            android:layout_alignBottom="@+id/img_wechat"
+            android:layout_marginBottom="@dimen/comment_3_dip"
+            android:text="@string/wechat_payment"
+            />
+
+        <ImageView
+            android:id="@+id/img_wechat_unpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_wechat"
+            android:layout_marginEnd="@dimen/comment_22_dip"
+            android:src="@drawable/icon_unchecked"
+            android:layout_alignParentEnd="true" />
+        <ImageView
+            android:id="@+id/img_wechat_payment"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_wechat"
+            android:layout_marginEnd="@dimen/comment_22_dip"
+            android:src="@drawable/icon_checked"
+            android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/recycler_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_40_dip">
+        <ImageView
+            android:id="@+id/img_queen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/comment_13_dip"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/icon_submit_queen" />
+
+
+        <TextView
+            android:id="@+id/tv_queen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_queen"
+            android:layout_alignBottom="@+id/img_queen"
+            android:text="@string/queen_payment"
+            android:layout_marginStart="@dimen/comment_13_dip"
+            android:layout_marginBottom="@dimen/comment_3_dip" />
+        <ImageView
+            android:id="@+id/img_queen_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/comment_22_dip"
+            android:visibility="gone"
+            android:layout_alignBottom="@+id/img_queen"
+            android:src="@drawable/icon_checked"
+            android:layout_alignParentEnd="true"/>
+        <ImageView
+            android:id="@+id/img_queen_unpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/comment_22_dip"
+            android:layout_alignBottom="@+id/img_queen"
+            android:src="@drawable/icon_unchecked"
+            android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/comment_40_dip"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/comment_300_dip"
+        android:gravity="center"
+        android:background="@drawable/ic_setting_breake"
+        android:layout_height="@dimen/comment_40_dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/confirmation_of_payment"
+            android:textColor="@color/alpha_90_black"
+            android:textSize="@dimen/comment_12_size"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="¥222.00"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:textColor="@color/alpha_90_black"
+            android:textSize="@dimen/comment_16_size"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.MineFollowActivity">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+    <TextView
+        android:id="@+id/tv_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_title"
+        android:layout_margin="@dimen/comment_10_dip"
+        android:text="当前区域商家"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tv_region"
+        android:id="@+id/mine_follow_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

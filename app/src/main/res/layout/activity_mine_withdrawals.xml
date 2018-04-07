@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.installactivity.MineWithdrawalsActivity">
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:id="@+id/rc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/ic_title"
+        android:layout_margin="@dimen/comment_10_dip"
+        android:background="@drawable/et_shap">
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:layout_width="match_parent"
+            android:text="@string/amount_of_cash"
+            android:textColor="@color/alpha_95_black"
+            android:textSize="@dimen/comment_16_size"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_marginTop="@dimen/comment_20_dip"
+            android:layout_below="@id/tv_money"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:textColor="@color/alpha_95_black"
+            android:text="@string/RMB"
+            android:textSize="@dimen/comment_30_size"
+            />
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_below="@id/tv_money"
+            android:layout_toRightOf="@id/tv_rmb"
+            android:layout_marginTop="@dimen/comment_20_dip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_50_dip"
+            android:layout_marginRight="@dimen/comment_10_dip"
+            android:background="@color/white"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/comment_5_dip"
+            android:textSize="@dimen/comment_25_size" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:background="@color/alpha_05_black"
+            android:layout_below="@id/et_money"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:layout_marginLeft="@dimen/comment_14_dip"
+            android:layout_marginRight="@dimen/comment_14_dip"
+
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:layout_below="@id/view"
+            android:text="@string/present_balance"
+            android:layout_marginLeft="@dimen/comment_15_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:layout_below="@id/view"
+            android:layout_toRightOf="@id/tv_text"
+            android:text="¥0.00"
+            android:layout_marginLeft="@dimen/comment_3_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/view"
+            android:layout_marginLeft="@dimen/comment_3_dip"
+            android:layout_marginRight="@dimen/comment_20_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:text="@string/full_presentation"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_40_dip"
+        android:layout_below="@id/rc_layout"
+        android:layout_margin="@dimen/comment_15_dip"
+        android:background="@drawable/ic_setting_breake"
+        android:text="@string/bring_new_card"
+        android:textColor="@color/white" />
+</RelativeLayout>

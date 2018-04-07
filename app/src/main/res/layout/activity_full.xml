@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.FullActivity">
+
+    <LinearLayout
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_50_dip"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/comment_0_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:drawableTop="@drawable/icon_full_service"
+                android:text="@string/customer_service"
+                android:layout_width="@dimen/comment_0_dip"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="@string/shop"
+                android:drawableTop="@drawable/icon_full_shop"
+                android:layout_width="@dimen/comment_0_dip"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="@string/Collection"
+                android:drawableTop="@drawable/icon_full_collection"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="@dimen/comment_0_dip"
+                android:layout_weight="1"
+                android:text="@string/add_to_cart"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/icon_shoping"
+                android:layout_height="@dimen/comment_50_dip" />
+
+            <TextView
+                android:id="@+id/tv_purchase"
+                android:layout_width="@dimen/comment_0_dip"
+                android:layout_height="@dimen/comment_50_dip"
+                android:layout_weight="1"
+                android:background="@drawable/ic_setting_breake"
+                android:gravity="center"
+                android:text="@string/purchase_immediately"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/recycler"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title"/>
+        <include layout="@layout/layout_home_shopping"/>
+
+    </LinearLayout>
+</RelativeLayout>

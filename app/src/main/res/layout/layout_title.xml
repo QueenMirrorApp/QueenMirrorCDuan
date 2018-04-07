@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root_title"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/comment_375_dip"
+    android:background="@color/alpha_05_black"
+    android:layout_height="@dimen/comment_65_dip"
+    >
+
+    <ImageView
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+       android:layout_marginTop="@dimen/comment_25_dip"
+        android:layout_marginLeft="@dimen/comment_10_dip"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:paddingRight="@dimen/comment_10_dip"/>
+    <TextView
+        android:id="@+id/title_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comment_40_dip"
+        android:layout_marginRight="@dimen/comment_40_dip"
+        android:textColor="@color/alpha_95_black"
+        android:paddingTop="@dimen/comment_5_dip"
+        android:textSize="@dimen/comment_18_size"
+        android:layout_centerInParent="true"
+        android:lines="1"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="marquee"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:focusableInTouchMode="true" />
+
+    <ImageView
+        android:id="@+id/title_photo"
+        android:layout_width="@dimen/comment_30_dip"
+        android:layout_height="@dimen/comment_30_dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/comment_10_dip"
+        android:padding="@dimen/comment_5_dip"
+        android:src="@mipmap/message"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/comment_16_size"
+        android:layout_alignParentBottom="true"
+        android:enabled="true"
+        android:paddingBottom="@dimen/comment_10_dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/comment_10_dip"/>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alpha_05_black"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.activity.MineBeanActivity">
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/layout_queentitle"/>
+    <RelativeLayout
+        android:background="@color/alpha_20_black"
+        android:layout_below="@+id/ic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:background="@color/white"
+            app:srcCompat="@drawable/icon_queen_barcode" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="@dimen/comment_13_dip"
+        android:layout_marginTop="@dimen/comment_11_dip"
+        android:text="本月" />
+
+    <TextView
+        android:id="@+id/tv_expenditure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_month"
+        android:layout_below="@+id/tv_month"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:text="支出100魔豆"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_expenditure"
+        android:layout_marginStart="@dimen/comment_30_dip"
+        android:layout_marginBottom="@dimen/comment_11_dip"
+        android:layout_toEndOf="@+id/tv_expenditure"
+        android:text="收入150魔豆"
+        android:textSize="@dimen/comment_12_size"
+         />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/comment_20_dip"
+        android:layout_marginRight="@dimen/comment_10_dip"
+        android:layout_height="@dimen/comment_20_dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+
+        app:srcCompat="@drawable/icon_home_submit" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_bean"
+        android:background="@color/white"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

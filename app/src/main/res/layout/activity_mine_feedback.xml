@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alpha_05_black"
+    tools:context="com.ainisi.queenmirror.queenmirrorcduan.ui.home.installactivity.MineFeedbackActivity">
+
+    <include
+
+        android:id="@+id/ic_title"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/rc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_100_dip"
+        android:layout_below="@id/ic_title"
+        android:layout_margin="@dimen/comment_10_dip"
+        android:background="@drawable/et_shap">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_100_dip"
+            android:layout_margin="@dimen/comment_10_dip"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/app_Valuable_advice"
+            android:textSize="@dimen/comment_14_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rc_layout_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_40_dip"
+        android:layout_below="@id/rc_layout"
+        android:layout_margin="@dimen/comment_10_dip"
+        android:background="@drawable/et_shap">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_40_dip"
+            android:layout_margin="@dimen/comment_10_dip"
+            android:maxLength="11"
+            android:inputType="number"
+            android:background="@color/white"
+            android:hint="@string/app_Phone"
+            android:textSize="@dimen/comment_14_size" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_40_dip"
+        android:layout_below="@id/rc_layout_two"
+        android:layout_margin="@dimen/comment_10_dip"
+        android:background="@drawable/ic_setting_breake"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+</RelativeLayout>

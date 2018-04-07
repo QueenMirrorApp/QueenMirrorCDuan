@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/layout_gift"
+        android:layout_width="@dimen/comment_0_dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/comment_32_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/icon_mine_gift" />
+
+        <TextView
+            android:textSize="@dimen/comment_14_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comment_5_dip"
+
+            android:text="@string/gift" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_beauty"
+        android:layout_width="@dimen/comment_0_dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="@dimen/comment_32_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/icon_mine_beauty" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:textSize="@dimen/comment_14_size"
+            android:text="@string/beauty" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_problem"
+        android:layout_width="@dimen/comment_0_dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="@dimen/comment_32_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/icon_mine_problem" />
+
+        <TextView
+            android:textSize="@dimen/comment_14_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:text="@string/help_and_feedback" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_service"
+        android:layout_width="@dimen/comment_0_dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/icon_service"
+            android:layout_width="@dimen/comment_32_dip"
+            android:layout_height="@dimen/comment_30_dip"
+            android:layout_alignParentStart="true"
+             />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:text="@string/customer_service_center" />
+    </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--悬停-->
+    <style name="Recommend_layout">
+
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="activity_layout">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--  //设置tablayout字体大小和背景 -->
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--//定义style：-->
+    <style name="dash_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layerType">software</item>
+        <!--//1.注意要加上这句。-->
+        <item name="android:layout_height">4px</item>
+        <!--2.view 的高度要大于 shape 的stroke 宽度，注意这两点就可以正常显示了。-->
+        <item name="android:background">@drawable/dash_line_shape</item>
+    </style>
+    <!--设置view横线的上下左右距离-->
+    <style name="Mineview">
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginRight">11dp</item>
+    </style>
+    //PopWindow显示动画
+    <style name="CustomPopWindowStyle">
+        <item name="android:windowEnterAnimation">@anim/popwindow_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_anim_out</item>
+    </style>
+</resources>

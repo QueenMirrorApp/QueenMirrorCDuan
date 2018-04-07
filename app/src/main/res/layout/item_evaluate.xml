@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/comment_10_dip"
+    android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginStart="@dimen/comment_14_dip"
+            android:layout_marginTop="@dimen/comment_21_dip"
+            app:srcCompat="@drawable/inco_shop" />
+
+        <TextView
+            android:id="@+id/tv_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_shop"
+            android:layout_marginStart="@dimen/comment_11_dip"
+            android:layout_toEndOf="@+id/iv_shop"
+            android:text="Dear Skin形象工作室" />
+
+        <ImageView
+            android:layout_width="@dimen/comment_15_dip"
+            android:layout_height="@dimen/comment_15_dip"
+            android:layout_marginTop="@dimen/comment_21_dip"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/comment_11_dip"
+            app:srcCompat="@drawable/icon_full_right" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/iv_shop"
+        android:background="@color/alpha_05_black"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:layout_marginBottom="@dimen/comment_10_dip"
+        android:layout_height="@dimen/comment_1_dip"/>
+    <RelativeLayout
+        android:layout_below="@id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/iv_title"
+            android:layout_width="@dimen/comment_40_dip"
+            android:layout_height="@dimen/comment_40_dip"
+            android:layout_marginLeft="@dimen/comment_10_dip"
+            android:layout_marginTop="@dimen/comment_10_dip"
+            android:src="@drawable/icon_portrait"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/comment_2_dip" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/comment_5_dip"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/comment_16_size"
+            android:layout_toRightOf="@+id/iv_title"
+            android:text="dugujun001"
+            android:textColor="@color/alpha_90_black"
+            />
+
+        <TextView
+            android:id="@+id/tv_shop"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/comment_5_dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_5_dip"
+            android:layout_below="@id/tv_name"
+            android:layout_toRightOf="@+id/iv_title"
+           android:textSize="@dimen/comment_14_size"
+            android:text="商家："
+            />
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/comment_18_dip"
+        android:layout_alignBottom="@+id/tv_shop"
+        android:layout_toEndOf="@+id/tv_shop"
+        app:srcCompat="@drawable/ic_sortrecyke_stars" />
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_shop"
+        android:layout_below="@+id/iv_title"
+        android:layout_marginTop="@dimen/comment_10_dip"
+        android:text="服务：满意" />
+
+    <TextView
+        android:id="@+id/tv_attitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_service"
+        android:layout_toEndOf="@+id/tv_name"
+        android:text="态度：满意" />
+
+    <TextView
+        android:id="@+id/tv_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_service"
+        android:layout_below="@+id/tv_service"
+        android:layout_marginTop="@dimen/comment_13_dip"
+        android:text="技师服务态度很好，质量也很棒"
+        android:textColor="@color/alpha_95_black" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/iv_title"
+        android:layout_marginEnd="@dimen/comment_13_dip"
+        android:text="2017.03.23"
+        android:textSize="@dimen/comment_12_size" />
+
+    <TextView
+        android:id="@+id/tv_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_evaluate"
+        android:layout_below="@+id/tv_evaluate"
+        android:layout_marginTop="@dimen/comment_5_dip"
+        android:text="单人纯色美甲" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignStart="@+id/tv_evaluate"
+        android:layout_below="@id/tv_wallet"
+        android:layout_margin="@dimen/comment_5_dip"
+        android:background="@color/alpha_05_black"
+        android:layout_height="@dimen/comment_1_dip"
+        android:id="@+id/view6" />
+
+    <ImageView
+        android:id="@+id/iv_ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_evaluate"
+        android:layout_below="@+id/view6"
+        app:srcCompat="@drawable/icon_mine_ratings" />
+
+    <TextView
+        android:id="@+id/tv_ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view6"
+        android:layout_marginLeft="@dimen/comment_5_dip"
+        android:layout_toRightOf="@id/iv_ratings"
+        android:text="追评" />
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_marginLeft="@dimen/comment_20_dip"
+        android:layout_toRightOf="@id/tv_ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view6"
+        android:layout_marginBottom="@dimen/comment_5_dip"
+        app:srcCompat="@drawable/icon_mine_delete" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view6"
+        android:layout_marginLeft="@dimen/comment_5_dip"
+        android:layout_toRightOf="@id/iv_delete"
+        android:text="删除" />
+    </RelativeLayout>
+</RelativeLayout>
