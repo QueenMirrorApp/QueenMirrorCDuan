@@ -14,6 +14,9 @@ import java.util.List;
 
 /**
  * Created by 王军超 on 2018/3/22.
+ *
+ * jl
+ *
  */
 
 public class MyAdapter extends BaseRecyclerAdapter<SortBean> {
