@@ -17,6 +17,8 @@ import java.util.List;
  *
  * jl
  *
+ * wachang
+ *
  */
 
 public class MyAdapter extends BaseRecyclerAdapter<SortBean> {
